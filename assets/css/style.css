@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+    --header-height: 4rem ;
+
+    /* color  */
+    --first-color : hsl(176, 88%, 27%);
+    --first-color-alt : hsl(129, 44%, 94%);
+    --second-color : hsl(34, 94%,87%);
+    --title-color : hsl(0, 0% ,13%);
+    --text-color : hsl(154, 13%, 32%);
+    --text-color-light : hsl(60, 1%, 56%);
+    --body-color : hsl(0, 0%, 100%);
+    --container-color : hsl(0, 0%, 93%);
+    --border-color : hsl(129, 36%, 85%);
+    --border-color-alt : hsl(113, 15%, 90%);
+
+    /* font and typography */
+    /* .5rm =8px | 1rem =16px */
+    --body-font : "Lato", sans-serif; ;
+    --second-font :  "League Spartan", sans-serif;;
+    --big-font-size : 3.5rem;
+    --h1-font-size : 2.75rem;
+    --h2-font-size : 2rem;
+    --h3-font-size : 1.75rem;
+    --h4-font-size : 1.375rem;
+    --large-font-size : 1.125rem;
+    --normal-font-size : 1rem;
+    --small-font-size : 0.875rem;
+    --smaller-font-size :   0.75rem;
+    --tiny-font-size : 0.6875rem;
+
+    /* ============ Font Weight================ */
+    --weight-400 :400;
+    --weight-500 :500;
+    --weight-600 :600;
+    --weight-700 :700;
+
+    /* ================Transition==================== */
+    --transition : cubic-bezier(0, 0, 0.05, 1)
+}
+/* ===BASE=== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input ,
+textarea ,
+body {
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--weight-400);
+}
+body {
+    background-color: var(--body-color);
+}
+h1,h2,h3,h4{
+    font-family: var(--second-font);
+    color: var(--title-color);
+    font-weight: var(--weight-600);
+}
+ul {
+    list-style: none;
+
+}
+a {
+    text-decoration: none;
+}
+p {
+    line-height: 1.5rem;
+}
+img {
+    max-width: 100px;
+
+}
+
+button,
+textarea,
+input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+/* ===REUSEABLE CSS CLASSES === */
+.container {
+    /* background-color: var(--first-color); */
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: .75rem;
+}
+/* ===HEADER & NAV === */
+.header_top {
+    background-color: var(--first-color-alt);
+    border-bottom:  1px solid var(--first-color);
+    padding-block:  0.785rem;
+}
+.header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_contact span:first-child {
+    margin-right:  2rem;
+}
+.header_contact span,
+.header_aleart-new,
+.header_top-action{
+    font-size: var(--small-font-size);
+}
+.header_aleart-new {
+    color: var(--text-color-light);
+    font-weight: var(--weight-600);
+}
+.header_top-action {
+    color: var(--text-color);
+    transition: .3s;
+}
+.header_top-action:hover {
+    color: var(--first-color);
+}
