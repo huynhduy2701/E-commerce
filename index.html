@@ -153,12 +153,12 @@
           <!-- === PRODUCT === -->
            <section class="products section container">
                 <div class="tab_btns">
-                    <span class="tab_btn active-tab">Feature</span>
-                    <span class="tab_btn">Popular</span>
-                    <span class="tab_btn">New added</span>
+                    <span class="tab_btn active-tab" data-target="#featured">Feature</span>
+                    <span class="tab_btn" data-target="#popular">Popular</span>
+                    <span class="tab_btn" data-target="#newAdded">New added</span>
                 </div>
                 <div class="tab_items">
-                    <div class="tab_item active-tab">
+                    <div class="tab_item active-tab" content id="featured">
                         <div class="products_container grid">
                             <div class="product_item">
                                 <div class="product_banner">
@@ -166,7 +166,7 @@
                                         <img src="assets/image/ao-aidas.png" alt="ao-adidas" 
                                         class="product_img default">
 
-                                        <img src="assets/image/ao-aidas.png" alt="ao-adidas" 
+                                        <img src="assets/image/screenshot-2022-04-18-at-213642-62d11943581b3-removebg-preview.png" alt="ao-adidas" 
                                         class="product_img hover">
                                     </a>
                                     <div class="product_actions">
@@ -600,12 +600,12 @@
                         </div>
                     </div>
 
-                    <div class="tab_item">
+                    <div class="tab_item" content id="popular">
                         <div class="products_container grid">
                             <div class="product_item">
                                 <div class="product_banner">
                                     <a href="details.html" class="product_image">
-                                        <img src="assets/image/ao-aidas.png" alt="ao-adidas" 
+                                        <img src="assets/image/screenshot-2022-04-18-at-213642-62d11943581b3-removebg-preview.png" alt="ao-adidas" 
                                         class="product_img default">
 
                                         <img src="assets/image/ao-aidas.png" alt="ao-adidas" 
@@ -1042,7 +1042,7 @@
                         </div>
                     </div>
 
-                    <div class="tab_item">
+                    <div class="tab_item" content id="newAdded">
                         <div class="products_container grid">
                             <div class="product_item">
                                 <div class="product_banner">
@@ -1485,6 +1485,121 @@
                     </div>
                 </div>
            </section>
+
+           <!-- === DEAL === -->
+            <section class="deals section">
+                <div class="deals_container container grid">
+                    <div class="deals_item">
+                        <div class="deals_group">
+                            <h3 class="deals_brand">
+                                Deal of the Day
+                            </h3>
+                            <span class="deals_category">
+                                Limited quantities.
+                            </span>
+                        </div>
+                        <h4 class="deals_title">
+                            Summer Collection New Morden Design
+                        </h4>
+                        <div class="deals_price flex">
+                            <span class="new_price">250.000VND</span>
+                            <span class="old_price">270.000VND</span>
+                        </div>
+                        <div class="deals_group">
+                            <p class="deals_countdown-text">
+                                Hurry up! Offer End In : 
+                            </p>
+                            <div class="countdown">
+                                <div class="countdown_amount">
+                                    <p class="countdown_period">
+                                        02
+                                    </p>
+                                    <span class="unit">Day</span>
+                                </div>
+                                <div class="countdown_amount">
+                                    <p class="countdown_period">
+                                        22
+                                    </p>
+                                    <span class="unit">Hours</span>
+                                </div>
+                                <div class="countdown_amount">
+                                    <p class="countdown_period">
+                                        57
+                                    </p>
+                                    <span class="unit">Minutes</span>
+                                </div>
+                                <div class="countdown_amount">
+                                    <p class="countdown_period">
+                                        02
+                                    </p>
+                                    <span class="unit">Second</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="deals_btn">
+                            <a href="details.html" class="btn btn-md">
+                                Shop Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="deals_item">
+                        <div class="deals_group">
+                            <h3 class="deals_brand">
+                                Woman clothing
+                            </h3>
+                            <span class="deals_category">
+                                Shirt & Bag
+                            </span>
+                        </div>
+                        <h4 class="deals_title">
+                           Try something new on vacation
+                        </h4>
+                        <div class="deals_price flex">
+                            <span class="new_price">150.000VND</span>
+                            <span class="old_price">270.000VND</span>
+                        </div>
+                        <div class="deals_group">
+                            <p class="deals_countdown-text">
+                                Hurry up! Offer End In : 
+                            </p>
+                            <div class="countdown">
+                                <div class="countdown_amount">
+                                    <p class="countdown_period">
+                                        02
+                                    </p>
+                                    <span class="unit">Day</span>
+                                </div>
+                                <div class="countdown_amount">
+                                    <p class="countdown_period">
+                                        22
+                                    </p>
+                                    <span class="unit">Hours</span>
+                                </div>
+                                <div class="countdown_amount">
+                                    <p class="countdown_period">
+                                        57
+                                    </p>
+                                    <span class="unit">Minutes</span>
+                                </div>
+                                <div class="countdown_amount">
+                                    <p class="countdown_period">
+                                        02
+                                    </p>
+                                    <span class="unit">Second</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="deals_btn">
+                            <a href="details.html" class="btn btn-md">
+                                Shop Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
       </main>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
