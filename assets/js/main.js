@@ -68,3 +68,17 @@ var swiperCategories = new Swiper(".categories_container", {
         },
       },
   });
+ 
+  // === IMAGE GALLERY === 
+  function imageGalley(){
+      const mainImg =document.querySelector('.details_img'),
+      smallImg =document.querySelectorAll('.details_small-img');
+
+      smallImg.forEach((img)=> {
+        img.addEventListener('click',() => {
+          mainImg.src = img.src
+          console.log("loi",img);
+        })
+      })
+  }
+  imageGalley();
