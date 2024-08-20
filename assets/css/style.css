@@ -38,6 +38,22 @@
     /* ================Transition==================== */
     --transition : cubic-bezier(0, 0, 0.05, 1)
 }
+/* Resposive typograpy  */
+    @media screen and (max-width: 1200px) {
+        :root{
+            --big-font-size : 2.25rem;
+            --h1-font-size : 2rem
+            --h2-font-size : 1.375rem;
+            --h3-font-size :1.25rem;
+            --h4-font-size : 1.25rem;
+            --large-font-size : 1rem;
+            --normal-font-size : 0.9375rem;
+            --small-font-size : 0.8125rem;
+            --smaller-font-size :   0.6875rem;
+            --tiny-font-size : 0.625rem;
+        }
+    }
+
 /* ===BASE=== */
 * {
     margin: 0;
@@ -123,6 +139,10 @@ table {
     padding-block: 1rem;
     resize: none;
 }
+.form_input:focus{
+    border: 2px solid var(--first-color);
+    border-color: var(--first-color);
+}
 /* ===HEADER & NAV === */
 .header_top {
     background-color: var(--first-color-alt);
@@ -166,6 +186,10 @@ table {
     height: calc(var(--header-height) + 2.5rem);
     justify-content: space-between;
     column-gap: 1rem;
+}
+.nav_menu-top,
+.nav_toggle {
+    display: none;
 }
 .nav_logo-img{
     width: 120px;
@@ -749,6 +773,7 @@ sẽ cắt bớt phần văn bản thừa và hiển thị dấu ba chấm (...)
     font-family: var(--second-font);
     font-size: var(--small-font-size);
     font-weight: var(--weight-600);
+    text-align: center;
 }
 
 .newsletter_form {
@@ -1022,7 +1047,7 @@ sẽ cắt bớt phần văn bản thừa và hiển thị dấu ba chấm (...)
 }
 
 
-/* === DETAILS TAB ===  */
+/* ======================= =DETAILS TAB ========================  */
 .details_tabs {
     display: flex;
     column-gap: 1.75rem;
@@ -1105,7 +1130,7 @@ sẽ cắt bớt phần văn bản thừa và hiển thị dấu ba chấm (...)
     cursor: pointer;
 }
 
-/* === CART === */
+/* ============================== CART ========================== */
 .table_container {
     overflow-x: auto;
 }
@@ -1155,23 +1180,35 @@ sẽ cắt bớt phần văn bản thừa và hiển thị dấu ba chấm (...)
 .table tr td {
     padding: .5rem;
     text-align: center;
+    
 }
 .table_title,
 .table_description,
 .table_price,
 .table_subtotal,
-.table_trash {
+.table_trash ,
+.table_stock
+ {
     font-size: var(--small-font-size);
 }
-.table_title{
+.table_title,
+.table_stock
+{
     color: var(--first-color);
 }
 .table_description {
     max-width: 250px;
     margin-inline: auto;
 }
-.table_trash {
+.table_trash i {
     color: var(--text-color-light);
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: .5s;
+
+}
+.table_trash i:hover {
+    color: var(--first-color);
 }
 .cart_actions {
    display: flex;
@@ -1246,4 +1283,255 @@ sẽ cắt bớt phần văn bản thừa và hiển thị dấu ba chấm (...)
 }
 .cart_total .btn {
     display: inline-flex;
+}
+
+/* =============================== LOGIN & REGISTER================ ===  */
+.login-register_container {
+    grid-template-columns: repeat(2,1fr);
+    align-items: flex-start;
+}
+.login,
+.register {
+    border: 1px solid var(--border-color-alt);
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+
+/* ========================== CHECKOUT ========================  */
+.checkout_container {
+    grid-template-columns: repeat(2,1fr);
+}
+.checkout_group:nth-child(2) {
+    border: 1px solid var(--border-color-alt);
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+.checkout_group .section_title {
+    font-size: var(--large-font-size);
+}
+.order_img {
+    width: 80px;
+}
+.checkout_title {
+    font-size: var(--small-font-size);
+}
+.order_table tr th ,
+.order_table tr td {
+    border:  1px solid var(--border-color-alt);
+    padding: .5rem;
+    text-align: center;
+}
+.order_table tr th {
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+}
+.table_quantity 
+.order_subtitle
+{
+    font-size: var(--small-font-size);
+}
+
+.order_grand-total {
+    color: var(--first-color);
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-700);
+}
+.payment_method {
+    margin-block:  2.5rem 2.75rem;
+}
+.payment_title {
+    margin-bottom: 1.5rem;
+}
+.payment_option {
+    margin-bottom: 1rem;
+}
+.payment_input {
+    accent-color: var(--first-color);
+    /* Thuộc tính CSS accent-color được sử dụng để thay đổi màu sắc mặc định của các thành phần giao diện người dùng (UI) nhất định trong form,
+     như các nút radio, checkbox, và thanh tiến trình (progress). */
+}
+.payment_label {
+    font-size: var(--small-font-size) ;
+}
+.checkout_group .btn {
+    cursor: pointer;
+}
+
+/* ----------------------------COMPARE--------------------------- */
+.compare_table tr th,
+.compare_table tr td {
+    padding: .5rem;
+    border: 1px solid var(--border-color-alt);
+}
+.compare_img {
+    width: 200px;
+}
+.compare_table tr th {
+    color: var(--text-color-light);
+    font-size: var(--small-font-size);
+}
+.compare_table tr td {
+    text-align: center;
+}
+.compare_colors {
+    justify-content: center;
+}
+/* .table_stock, */
+.table_weight,
+.table_dimentions{
+    font-size: var(--small-font-size);
+}
+
+/* ========================= ACCOUNT ========================== */
+.accounts_container{
+    grid-template-columns: repeat(2,1fr);
+}
+.tab_content:not(.active-tab) {
+    display: none;
+}
+.account_tabs {
+    border: 1px solid var(--border-color-alt);
+    border-radius: .25rem;
+}
+.account_tab {
+    padding: 1rem 2rem; 
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+    display: flex;
+    align-items: center;
+    column-gap: 0.625rem;
+    cursor: pointer;
+}
+.account_tab.active-tab {
+    background-color: var(--first-color);
+    color: var(--body-color);
+}
+.account_tab:not(:last-child){
+    border-bottom: 1px solid var(--border-color-alt);
+}
+.tab_content {
+    border: 1px solid var(--border-color-alt);
+}
+.tab_header {
+    background-color: var(--container-color);
+    border-bottom: 1px solid var(--border-color-alt);
+    padding: 1rem;
+    font-size: var(--small-font-size);
+}
+.tab_body {
+    padding: 1rem;
+}
+.place_order-table tr th {
+    color: var(--title-color);
+    text-align: left;
+}
+.place_order-table tr th,
+.place_order-table tr td {
+    border: 1px solid var(--border-color-alt);
+    padding: 0.5rem;
+    font-size: var(--small-font-size);
+}
+.view_order,
+.edit {
+    color: var(--first-color);
+}
+.address {
+    font-style: normal;
+    font-size: var(--small-font-size);
+    line-height: 1.5;
+}
+.city {
+    margin-bottom: .25rem;
+}
+.edit {
+    font-size: var(--small-font-size);
+}
+
+@media screen and (max-width: 1400px) {
+    .container {
+        max-width: 1140px;
+    }
+    .products_container,
+    .showcase_container
+     {
+        grid-template-columns: repeat(3,1fr);
+    }
+    .accounts_container {
+        grid-template-columns: 3fr 9fr;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .header_top {
+        display: none;
+    }
+    .nav {
+        height: calc(var(--header-height) + 1.5rem);
+    }
+    .nav_logo-img {
+        width: 100px;
+    }
+    .nav_menu {
+        position: fixed;
+        right: -100%;
+        top: 0;
+        max-width: 400px;
+        width: 100%;
+        height: 100%;
+        padding: 1.25rem 2rem;
+        background-color: var(--body-color);
+        z-index: 100;
+        flex-direction: column;
+        align-items: flex-start ;
+        row-gap: 2rem;
+        box-shadow: 0 0 15px hsla(0,0%, 0% ,0.1);
+    }
+    .nav_list {
+        order: 1;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 1.5rem;
+    }
+    .nav_link {
+        font-size: var(--large-font-size);
+    }
+    .header_search .form_input {
+        border-color:  var(--first-color);
+    }
+    .nav_menu-top,
+    .nav_toggle {
+        display: flex;
+    }
+    .nav_menu-top {
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 1.2rem;
+    }
+    .nav_menu-logo img {
+        width: 100px;
+
+    }
+    .nav_close {
+        font-size: 1.5rem;
+
+    }
+    .header_action-btn img {
+        width: 21px;
+    }
+}
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 576px) {
+
+}
+@media screen and (max-width: 350px) {
+
 }

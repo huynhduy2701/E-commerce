@@ -45,7 +45,7 @@
                 <ul class="nav_list">
                     <li class="nav_item"><a href="index.html" class="nav_link ">Home</a></li>
                     <li class="nav_item"><a href="shop.html" class="nav_link">Shop</a></li>
-                    <li class="nav_item"><a href="accont.html" class="nav_link">Account</a></li>
+                    <li class="nav_item"><a href="account.html" class="nav_link">Account</a></li>
                     <li class="nav_item"><a href="compare.html" class="nav_link">Compare</a></li>
                     <li class="nav_item"><a href="login-register.html" class="nav_link">Login</a></li>
                 </ul>
@@ -60,11 +60,11 @@
             </div>
             <div class="header_user-action">
                 <a href="wishlist.html" class="header_action-btn">
-                    <i class="ri-heart-fill"></i>
+                    <i class="ri-heart-fill  active-link"></i>
                     <span class="count">3</span>
                 </a>
                 <a href="cart.html" class="header_action-btn">
-                    <i class="ri-shopping-bag-line active-link"></i>
+                    <i class="ri-shopping-bag-line"></i>
                     <span class="count">3</span>
                 </a>
             </div>
@@ -72,15 +72,61 @@
     </header>
     <!-- === MAIN === -->
      <main class="main">
-         <!-- === BREADCRUMB ===  -->
-         <section class="breadcrumb">
-            <ul class="breadcrumb_list flex container">
-                <li><a href="index.html" class="breadcrumb_link">Home</a></li>
-                <li><span class="breadcrumb_link">></span></li>
-                <li><span class="breadcrumb_link breadcrumb_link-shop">WISHLIST</span></li>
-                
-            </ul>
-            </section>
+        <!-- === BREADCRUMB ===  -->
+        <section class="breadcrumb">
+        <ul class="breadcrumb_list flex container">
+            <li><a href="index.html" class="breadcrumb_link">Home</a></li>
+            <li><span class="breadcrumb_link">></span></li>
+            <li><span class="breadcrumb_link breadcrumb_link-shop">WISHLIST</span></li>
+            
+        </ul>
+        </section>
+
+        <!-- === wishlist ===  -->
+        <section class="wishlist section-lg container">
+            <div class="table_container">
+                <table class="table">
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Stock Status</th>
+                        <th>ACtion</th>
+                        <th>Remove</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="assets/image/chup-trai-quan-ao-3.jpg" alt="" class="table_img"/>
+                        </td>
+                        <td>
+                            <h3 class="table_title">Quan Ao</h3>
+                            <p class="table_description">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Architecto vero sapiente fugiat, totam velit animi. Porro, 
+                                vel unde consequuntur incidunt, voluptate,
+                            </p>
+                        </td>
+                        <td>
+                            <span class="table_price">
+                                110.000 VND
+                            </span>
+                        </td>
+                        <td>
+                            <span class="table_stock">
+                              In Stock
+                            </span>
+                        </td>
+                        <td>
+                          <a href="" class="btn btn btn-sm">Add to cart</a>
+                        </td>
+                        <td>
+                           <span class="table_trash"> <i class="ri-delete-bin-line"></i></span>
+                        </td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </section>
      </main>
 
 
