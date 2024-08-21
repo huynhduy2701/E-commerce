@@ -1711,7 +1711,7 @@ sẽ cắt bớt phần văn bản thừa và hiển thị dấu ba chấm (...)
     
 
 }
-@media screen and (min-width: 350px) {
+@media screen and (max-width: 350px) {
     .footer_container{
         grid-template-columns: 1fr;
     }
