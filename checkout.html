@@ -17,8 +17,8 @@
     />
 </head>
 <body>
-      <!-- ===HEADER=== -->
-    <header class="header">
+    <!-- ===HEADER=== -->
+   <header class="header">
     <div class="header_top">
         <div class="header_container container">
             <div class="header_contact">
@@ -36,17 +36,25 @@
     </div>
 
     <!-- ==nav== -->
-        <nav class="nav container">
+     <nav class="nav container">
         <a href="index.html" class="nav_logo">
             <img src="assets/image/logoFavicon.png" alt="" srcset="" class="nav_logo-img">
         </a>
         
         <div class="nav_menu" id="nav-menu">
+            <div class="nav_menu-top">
+                <a href="" class="nav_menu-logo">
+                    <img src="assets/image/logoFavicon.png" alt=""  srcset="">
+                </a>
+                <div class="nav_close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
             <ul class="nav_list">
                 <li class="nav_item"><a href="index.html" class="nav_link ">Home</a></li>
-                <li class="nav_item"><a href="shop.html" class="nav_link">Shop</a></li>
-                <li class="nav_item"><a href="account.html" class="nav_link">Account</a></li>
-                <li class="nav_item"><a href="compare.html" class="nav_link">Compare</a></li>
+                <li class="nav_item"><a href="shop.html" class="nav_link ">Shop</a></li>
+                <li class="nav_item"><a href="account.html" class="nav_link ">Account</a></li>
+                <li class="nav_item"><a href="compare.html" class="nav_link ">Compare</a></li>
                 <li class="nav_item"><a href="login-register.html" class="nav_link ">Login</a></li>
             </ul>
 
@@ -55,21 +63,23 @@
                 <button class="search_btn">
                     <i class="ri-search-line"></i>
                 </button>
-
             </div>
         </div>
         <div class="header_user-action">
-            <a href="wishlist.html" class="header_action-btn">
-                <i class="ri-heart-fill "></i>
+            <a href="wishlist.html" class="header_action-btn ">
+                <i class="ri-heart-fill"></i>
                 <span class="count">3</span>
             </a>
-            <a href="cart.html" class="header_action-btn">
+            <a href="cart.html" class="header_action-btn ">
                 <i class="ri-shopping-bag-line"></i>
                 <span class="count">3</span>
             </a>
+            <div class="header_action-btn nav_toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
         </div>
-        </nav>
-    </header>
+     </nav>
+ </header>
 
     <!-- === MAIN ===  -->
     <main class="main">

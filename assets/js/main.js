@@ -1,3 +1,27 @@
+
+///SHOW MENU 
+const navMenu = document.getElementById("nav-menu"),
+navToggle=document.getElementById('nav-toggle'),
+navClose = document.getElementById('nav-close')
+
+// MENU SHOW 
+// VValidate if constant exits 
+if(navToggle){
+  navToggle.addEventListener('click', ()=> {
+    navMenu.classList.add('show-menu');
+  })
+}
+
+//HIDE SHOW 
+//validate if constant exits
+
+if(navClose){
+  navClose.addEventListener('click', ()=> {
+    navMenu.classList.remove('show-menu');
+  })
+}
+
+
 // === SWIPER CATEGORY ===
 var swiperCategories = new Swiper(".categories_container", {
     spaceBetween: 10,
@@ -9,15 +33,15 @@ var swiperCategories = new Swiper(".categories_container", {
     },
     breakpoints: {
         350: {
-          slidesPerView: 2,
+          slidesPerView: 1,
           spaceBetween: 24,
         },
         768: {
-          slidesPerView: 3,
+          slidesPerView: 1,
           spaceBetween: 24,
         },
         992: {
-          slidesPerView: 4,
+          slidesPerView: 3,
           spaceBetween: 24,
         },
         1200: {
